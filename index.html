@@ -20,9 +20,9 @@
 </head>
 <body>
     
-    <div  id="app" class="container p-5">
+    <div  id="app" class="container pt-4">
         <div class="row">
-            <div class="col-12 col-lg-5 mb-3">
+            <div class="col-12 col-lg-5 mb-4">
                 <div class="card shadow">
                     <div class="card-header">
                         <h4><i>Add Your Tesks</i></h4>
@@ -44,7 +44,7 @@
                              <i><b>{{ text }}</b></i>
                         </div>
                         <div v-for="(todo,index) in todos">
-                            <div class=" d-flex align-items-center gap-2">
+                            <div class=" d-flex align-items-center gap-2 mb-3">
                                 <input v-model="todo.done" type="checkbox" name="" id="">
                                 <!-- <span :class="todo.done?'done':''">{{ todo.text }} / {{ todo.time }}</span> -->
                                 <b><i><span :class="{'done':todo.done}">{{ todo.text }} / {{ todo.time }}</span></i></b>
