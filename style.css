@@ -1,0 +1,9 @@
+*
+{
+    user-select: none;
+}
+
+.done 
+{
+    text-decoration: line-through;
+}
