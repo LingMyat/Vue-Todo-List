@@ -4,7 +4,7 @@ var app = new Vue({
         Title : 'Things to do',
         tesk : '',
         time : '',
-        todos:[],
+        todos:localStorage.getItem('mytodos')==null?[]:JSON.parse(localStorage.getItem('mytodos')),
     },
     methods : {
         addTodos() {
@@ -15,10 +15,15 @@ var app = new Vue({
             });
             this.tesk = '';
             this.time = '';
+            this.storeTodos();
         },
         removeTesk(index){
             this.todos.splice(index,1);
+            this.storeTodos();
         },
+        storeTodos(){
+            localStorage.setItem('mytodos',JSON.stringify(this.todos));
+        }
     },
     computed : {
         text(){
