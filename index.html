@@ -29,14 +29,14 @@
         </div>
         <div class="row" v-if="login">
             <div class="col-12 col-lg-5 mb-4">
-                <div class="card shadow">
+                <div class="card shadow" >
                     <div class="card-header">
-                        <h4><i>Add Your Tasks</i></h4>
+                        <h4 class=""><i>Add Your Tasks</i></h4>
                     </div>
                     <div class="card-body">
                         <input v-model="tesk" type="text" class="form-control mb-3">
                         <input v-model="time" class="" type="time" name="" id="">
-                        <button @click="addTodos" class="btn btn-primary float-end" :disabled="tesk==''||time==''">Add+</button>
+                        <button @click="addTodos" class="btn btn-success float-end" :disabled="tesk==''||time==''">Add Task+</button>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 <div class="card shadow">
                     <div class="card-header">
                         <div class="">
-                            <img src="./user (3).jpg" class=" rounded-circle pf" alt="" srcset="">
+                            <img src="./pf.jpg" class=" rounded-circle pf" alt="" srcset="">
                             <b><i>{{ name }}</i></b>
                         </div>
                         <h3 class=" d-inline-block"><i>{{ Title }} </i></h3>

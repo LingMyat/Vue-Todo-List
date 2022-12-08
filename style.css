@@ -2,7 +2,11 @@
 {
     user-select: none;
 }
-
+body
+{
+    background: url('./bg.jpg');
+    background-size: cover;
+}
 .done 
 {
     text-decoration: line-through;
