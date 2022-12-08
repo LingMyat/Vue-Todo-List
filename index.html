@@ -56,7 +56,7 @@
                         </div>
                         <div v-for="(todo,index) in todos">
                             <div class=" d-flex align-items-center gap-2 mb-2">
-                                <input v-model="todo.done" type="checkbox" name="" id="">
+                                <input style="cursor: pointer;" @change="storeTodos" v-model="todo.done" type="checkbox" name="" id="">
                                 <!-- <span :class="todo.done?'done':''">{{ todo.text }} / {{ todo.time }}</span> -->
                                 <b><i><span :class="{'done':todo.done}">{{ todo.text }} / {{ todo.time }}</span></i></b>
                                 <button @click="removeTesk(index)" class="btn btn-sm btn-danger" :disabled="!todo.done"><i class="fa-solid fa-trash"></i></button>
