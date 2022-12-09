@@ -2,11 +2,6 @@
 {
     user-select: none;
 }
-body
-{
-    background: url('./bg.jpg');
-    background-size: cover;
-}
 .done 
 {
     text-decoration: line-through;
@@ -16,11 +11,4 @@ body
 {
     width: 50px;
     height: 50px;
-}
-@media (max-width:600px) 
-{
-    body {
-        background-size: auto;
-        background-position: center;
-    }
 }
